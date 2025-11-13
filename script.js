@@ -3,17 +3,19 @@ const container = document.querySelector('#container');
 
 // Create Grid
 
+function createFlexGrid(gridSize) {
+     container.innerHTML = '';     
 
-function createGrid(grid){
-    size = grid*grid;
-   for (let i=0; i<size; i++){
-        let newRow = document.createElement('div');
-        let newColumn = document.createElement('div');
-        container.appendChild(newRow);
-        container.appendChild(newColumn);   
+    for (let i = 0; i < gridSize; i++) {          // rows
+        let row = document.createElement('div');
+        row.classList.add('grid-row');
+        
+        for (let j = 0; j < gridSize; j++) {      // columns = cells
+            let cell = document.createElement('div');
+            cell.classList.add('grid-cell');
+            row.appendChild(cell); 
+        }        
+        container.appendChild(row); 
     }
-
 }
-
-
-createGrid(16);
+createFlexGrid(16);
