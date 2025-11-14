@@ -1,7 +1,6 @@
-//Refs
-const container = document.querySelector('#container');
+// Creating Grid
 
-// Create Grid
+const container = document.querySelector('#container');
 
 function createFlexGrid(gridSize) {
      container.innerHTML = '';     
@@ -19,3 +18,16 @@ function createFlexGrid(gridSize) {
     }
 }
 createFlexGrid(16);
+
+// Hovering
+
+const cells = document.querySelectorAll('.grid-cell');
+
+function changeCellColor(e){
+    e.target.style.background="darkgrey"; // e.target - referencing the SPECIFIC element (not 'cells' NodeList)
+}
+
+cells.forEach(cell => {
+    cell.addEventListener("mouseenter", changeCellColor);
+});
+
