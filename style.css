@@ -33,8 +33,8 @@ body {
 #size-button{
     padding:1%;
     border-radius: 8%;
-   background-color:bisque;
-   color:blueviolet;
+   background-color:rgb(185, 136, 163);
+   color:black;
 }
 #container {
     margin: 10px;
@@ -42,6 +42,7 @@ body {
     width: 640px; 
     height: 640px; 
     border: 2px solid black;
+    background-color: bisque;
 }
 
 /* Rows */

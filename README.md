@@ -27,7 +27,17 @@ It's a browser version of game between a sketchpad and an Etch-A-Sketch.
 * Solution URL: [GitHub Repo](https://github.com/dinruz/etch-a-sketch)
 * Live Site URL: [Etch-a-Sketch](https://dinruz.github.io/etch-a-sketch/)
 
-## Screenshots
+## Screenshot
+
+<table>
+  <tr>
+    <td align="center">
+    
+      
+      <img src="assets/screenshot/screenshot1.jpg" alt="Desktop preview" width="350" />
+      
+    </td>
+</table>
 
 ## Technical Details 
 
@@ -40,11 +50,30 @@ It's a browser version of game between a sketchpad and an Etch-A-Sketch.
 
 ### How to Play
 
+✏️ **Drawing (The Sketch)**
+
+  * Simply move your cursor over the drawing grid. 
+  
+    Each square your cursor passes over will change color, leaving a permanent mark on the canvas.
+
+
+🗑️ **Clearing the Canvas** 
+ * Click the *"Clear"* button. 
+
+   All squares are reset to their original background color, giving you a fresh canvas.
+
+
+⊞  **Change Grid Size** 
+
+  * Click the *"Set Grid Size"* button.
+  * Enter a new numerical value (e.g., 50) when prompted to define the dimensions (50x50).The maximum is 100 (100x100).
+
+  * The previous grid is removed, and a new grid is rendered with the specified size.
 
 
 ##  Credits
 
 🔗 Author: [**dinruz**](https://www.github.com/dinruz) 
 
- 🔗 Instructions: [**The Odin Project**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) 
+🔗 Instructions: [**The Odin Project**](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) 
 

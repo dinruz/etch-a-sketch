@@ -25,7 +25,7 @@ function createFlexGrid(gridSize) {
 }
 
 function changeCellColor(e) {
-    e.target.style.background = "darkgrey";
+    e.target.style.background =getRandomColor();
 }
 
 function addHoverEffect() {
@@ -68,4 +68,16 @@ createFlexGrid(16);
 const sizeButton = document.querySelector('#size-button');
 if (sizeButton) {
     sizeButton.addEventListener('click', promptNewSize);
+}
+
+
+
+// random colours
+
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+       return `rgba(${r}, ${g}, ${b}, 0.4)`;
 }
