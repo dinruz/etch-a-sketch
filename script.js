@@ -1,8 +1,8 @@
 // create grid
-const container = document.querySelector('#container');
+const canvas = document.querySelector('#canvas');
 
 function createFlexGrid(gridSize) {
-    container.innerHTML = '';
+    canvas.innerHTML = '';
 
     // cell height
     const cellPercentage = 100 / gridSize;
@@ -18,7 +18,7 @@ function createFlexGrid(gridSize) {
             cell.classList.add('grid-cell');
             row.appendChild(cell);
         }
-        container.appendChild(row);
+        canvas.appendChild(row);
     }
     
     addHoverEffect(); // hover after adding cells!
@@ -70,6 +70,22 @@ if (sizeButton) {
     sizeButton.addEventListener('click', promptNewSize);
 }
 
+
+// Clear Canvas
+
+const clearButton = document.querySelector('#clear-button');
+
+if (clearButton) {
+    clearButton.addEventListener('click', clear);
+}
+
+function clear() {
+    const cells = document.querySelectorAll('.grid-cell');
+
+     cells.forEach(cell => {     
+        cell.style.background = "";       
+    });
+}
 
 
 // random colours

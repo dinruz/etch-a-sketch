@@ -12,37 +12,73 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;             
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column;            
     align-items: center;
     min-height: 100vh;
-    background-color: bisque ;
+    background-color: rgb(209, 191, 205) ;
+    font-family: 'gochi', sans-serif;
 }
 
 /* Sections */
 
-#title {
-    font-family: 'gochi', sans-serif;
-    font-size: 3em;
-    color:blueviolet;
-    font-weight: lighter;
-    text-align: center;
-    margin-top: 20px;
+#title,
+#footer{
+    background-color: rgb(189, 150, 181);
+    width:100%;
+    margin:0;
+    text-align: center;   
 }
 
-#size-button{
-    padding:1%;
-    border-radius: 8%;
-   background-color:rgb(185, 136, 163);
-   color:black;
+#title {    
+    font-size: 2.4em;    
+    font-weight: lighter;    
+    padding:0.2em;
 }
-#container {
-    margin: 10px;
+
+#footer{
+    padding:0;
+    font-size: 0.8em;
+    color: rgb(43, 41, 41);
+}
+
+#container{
+    margin:1em;
+    display:flex;
+    gap: 2.5em;
+}
+
+#canvas {
+    margin: 0;
     padding: 0;
-    width: 640px; 
-    height: 640px; 
-    border: 2px solid black;
+    width: 470px; 
+    height: 470px; 
+    border: 2px solid rgb(134, 85, 124);
     background-color: bisque;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap:2em;
+}
+
+/* Elements */
+
+#size-button, #clear-button{
+    padding:0.3em;
+    border-radius: 8%;
+    height:3em;
+    width:8em;
+    background-color:rgba(177, 125, 166, 0.829);   
+    font-size: 1.1em;
+    color: rgb(43, 41, 41);
+    font-family: 'gochi', sans-serif;
+}
+
+a:hover{
+    color:rgb(140, 33, 240);
 }
 
 /* Rows */
